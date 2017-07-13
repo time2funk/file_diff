@@ -17,15 +17,15 @@ cfile = open(str(cfile_name), "r")
 ufile = open('uniqlist.txt', "w")
 
 #magic
-list = list(set(mfile)-set(cfile))  
+_list = list(set(mfile)-set(cfile))  
 
 #show me what you get
 print('-|')
-print list  
+print _list  
 print('-|')
 
 #loopik zalypik
-for i in list: 
+for i in _list: 
 	ufile.write(str(i))
 print('-|finish');
 
